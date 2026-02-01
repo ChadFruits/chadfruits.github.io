@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="g" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a5cff" />
+      <stop offset="1" stop-color="#32f0d2" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="#0b0e1a" />
+  <rect width="800" height="450" fill="url(#g)" opacity="0.22" />
+  <rect x="60" y="70" width="680" height="300" fill="none" stroke="#7a5cff" stroke-width="3" opacity="0.7" />
+  <text x="80" y="150" fill="#f5f5f7" font-size="34" font-family="Arial, sans-serif">Neon Orchard</text>
+  <text x="80" y="200" fill="#a3a7b7" font-size="20" font-family="Arial, sans-serif">Stealth Adventure</text>
+  <polygon points="560,260 620,310 520,340" fill="#32f0d2" opacity="0.6" />
+</svg>
