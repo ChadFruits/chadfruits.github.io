@@ -1,71 +1,92 @@
-<!doctype html>
+t<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ChadFruits Game Studio</title>
+    <title>ChadFruits | Indie Game Dev</title>
+    <meta
+      name="description"
+      content="ChadFruits is an indie game dev portfolio featuring current projects, releases, and a Discord community."
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg-glow" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-left" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-right" aria-hidden="true"></div>
 
     <header class="site-header">
       <div class="container header-inner">
-        <div class="logo">
+        <a class="logo" href="#top" aria-label="ChadFruits home">
           <span class="logo-mark">CF</span>
-          <span class="logo-text">ChadFruits Game Studio</span>
-        </div>
-        <nav class="nav">
+          <span class="logo-text">ChadFruits</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
           <a href="#games">Games</a>
-          <a href="#about">About</a>
+          <a href="#about">Dev Notes</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a class="cta" href="#contact">Hire Us</a>
+        <a
+          class="cta"
+          href="https://discord.gg/Y3AuMZWfAG"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Join Discord
+        </a>
       </div>
     </header>
 
-    <main>
+    <main id="top">
       <section class="hero container reveal">
         <div class="hero-copy">
-          <p class="eyebrow">Indie Game Dev Studio</p>
-          <h1>We craft punchy, playful worlds with bold mechanics.</h1>
+          <p class="eyebrow">Indie game dev portfolio</p>
+          <h1>Crunchy mechanics, strong vibe, and games worth clicking.</h1>
           <p class="lead">
-            ChadFruits is a small studio building high-energy action and cozy
-            adventure games. We love tight loops, juicy feedback, and
-            expressive art direction.
+            ChadFruits is where my games live. I’m building small, readable,
+            replayable projects with punchy art direction and enough personality
+            to stand out.
           </p>
           <div class="hero-actions">
-            <a class="btn primary" href="#games">View Games</a>
-            <a class="btn ghost" href="#contact">Contact</a>
+            <a class="btn primary" href="#games">See Games</a>
+            <a
+              class="btn ghost"
+              href="https://discord.gg/Y3AuMZWfAG"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Discord Server
+            </a>
           </div>
           <div class="hero-stats">
-            <div>
-              <span class="stat">12+</span>
-              <span class="label">Prototypes</span>
+            <div class="stat-card">
+              <span class="stat">1</span>
+              <span class="label">Featured release</span>
             </div>
-            <div>
+            <div class="stat-card">
               <span class="stat">3</span>
-              <span class="label">Shipped Titles</span>
+              <span class="label">Games on display</span>
             </div>
-            <div>
-              <span class="stat">1M+</span>
-              <span class="label">Players Reached</span>
+            <div class="stat-card">
+              <span class="stat">24/7</span>
+              <span class="label">Dev community</span>
             </div>
           </div>
         </div>
+
         <div class="hero-panel">
-          <div class="hero-card">
-            <p class="tag">Now Playtesting</p>
-            <h2>Feral Fruit Frenzy</h2>
+          <div class="status-card">
+            <p class="tag">Latest build</p>
+            <h2>Grid Realm</h2>
             <p>
-              Chaotic co-op brawler where sentient fruit reclaim their orchard
-              with combos, gadgets, and ridiculous physics.
+              My current focus. Link this button to your itch.io game page so
+              visitors can play it immediately.
             </p>
             <div class="chip-row">
-              <span class="chip">Unity</span>
-              <span class="chip">Co-op</span>
-              <span class="chip">Physics</span>
+              <span class="chip">itch.io</span>
+              <span class="chip">Playable</span>
+              <span class="chip">Updated often</span>
             </div>
+            <a class="btn primary card-btn" href="#games">Open Projects</a>
           </div>
         </div>
       </section>
@@ -73,64 +94,74 @@
       <section id="games" class="section container reveal">
         <div class="section-head">
           <div>
-            <p class="eyebrow">Featured Games</p>
-            <h2>Game Lineup</h2>
+            <p class="eyebrow">Games</p>
+            <h2>Featured Projects</h2>
           </div>
           <p class="section-note">
-            Each title mixes tight combat, chunky animation, and a bit of chaos.
+            Each card can point to a game page, a trailer, or a build download.
+            For published games, linking out to itch.io is the cleanest option.
           </p>
         </div>
+
         <div class="game-grid">
-          <article class="game-card">
-            <img src="assets/game-1.svg" alt="Screenshot placeholder for Feral Fruit Frenzy" />
+          <article class="game-card featured">
+            <img src="assets/game-1.svg" alt="Artwork for Grid Realm" />
             <div class="game-body">
               <div class="game-title">
-                <h3>Feral Fruit Frenzy</h3>
-                <span class="badge">2026</span>
+                <h3>Grid Realm</h3>
+                <span class="badge">itch.io</span>
               </div>
               <p>
-                Team-based brawler with fruit-powered gadgets, physics mayhem,
-                and bite-sized arenas.
+                A clean featured slot for your current game. Add your actual
+                itch.io URL to the button below so this becomes a playable link.
               </p>
               <div class="game-meta">
-                <span>Platforms: PC, Console</span>
-                <span>Genre: Action / Co-op</span>
+                <span>Status: Active project</span>
+                <span>Best use: direct external game page</span>
               </div>
+              <a
+                class="btn ghost small"
+                href="https://YOUR-ITCH-IO-PAGE-HERE"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Play on itch.io
+              </a>
             </div>
           </article>
 
           <article class="game-card">
-            <img src="assets/game-2.svg" alt="Screenshot placeholder for Neon Orchard" />
+            <img src="assets/game-2.svg" alt="Artwork for Neon Orchard" />
             <div class="game-body">
               <div class="game-title">
                 <h3>Neon Orchard</h3>
-                <span class="badge">2025</span>
+                <span class="badge">Prototype</span>
               </div>
               <p>
-                Story-driven stealth adventure through a glowing cyber farm.
-                Hack irrigation grids and outsmart drones.
+                A fast, stylized project card for a prototype, trailer, or jam
+                game. Swap the button for any public page you want to share.
               </p>
               <div class="game-meta">
-                <span>Platforms: PC</span>
-                <span>Genre: Stealth / Adventure</span>
+                <span>Genre: Action / Stealth</span>
+                <span>Platform: PC</span>
               </div>
             </div>
           </article>
 
           <article class="game-card">
-            <img src="assets/game-3.svg" alt="Screenshot placeholder for Grovebound" />
+            <img src="assets/game-3.svg" alt="Artwork for Grovebound" />
             <div class="game-body">
               <div class="game-title">
                 <h3>Grovebound</h3>
-                <span class="badge">2024</span>
+                <span class="badge">Coming soon</span>
               </div>
               <p>
-                Cozy roguelite where you brew spells from fruit essences and
-                rebuild a forgotten grove.
+                Keep this slot for an upcoming release, devlog, or downloadable
+                demo. The layout is ready for more cards whenever you need them.
               </p>
               <div class="game-meta">
-                <span>Platforms: Switch</span>
                 <span>Genre: Cozy / Roguelite</span>
+                <span>Platform: Switch or PC</span>
               </div>
             </div>
           </article>
@@ -140,31 +171,32 @@
       <section id="about" class="section container reveal">
         <div class="section-head">
           <div>
-            <p class="eyebrow">About ChadFruits</p>
-            <h2>Small Team, Loud Ideas</h2>
+            <p class="eyebrow">Dev Notes</p>
+            <h2>Built Like a Studio Site</h2>
           </div>
           <p class="section-note">
-            We are a compact crew of designers, engineers, and artists focused on
-            memorable feel and tight production.
+            The goal here is simple: make the site feel like a real game-dev
+            homepage instead of a generic portfolio.
           </p>
         </div>
+
         <div class="about-grid">
           <div class="about-card">
-            <h3>Our Focus</h3>
+            <h3>What I focus on</h3>
             <ul>
-              <li>Gameplay-first prototyping in Unity</li>
-              <li>Bold color palettes and stylized 3D</li>
-              <li>Controller-first input and haptics</li>
-              <li>Rapid iteration with player feedback</li>
+              <li>Strong first impressions</li>
+              <li>Readable mechanics and feedback</li>
+              <li>Stylized visuals with a distinct identity</li>
+              <li>Fast links to playable builds</li>
             </ul>
           </div>
           <div class="about-card">
-            <h3>Tools & Tech</h3>
+            <h3>Project pipeline</h3>
             <ul>
-              <li>Unity 2022+ (URP & HDRP)</li>
-              <li>Blender, Substance, Aseprite</li>
-              <li>FMOD + custom audio tools</li>
-              <li>Steamworks + cross-platform builds</li>
+              <li>Featured slot = current build</li>
+              <li>Prototype slot = experiments and jams</li>
+              <li>Coming soon slot = future release page</li>
+              <li>Each card can link to itch.io, Steam, or a trailer</li>
             </ul>
           </div>
         </div>
@@ -174,22 +206,31 @@
         <div class="section-head">
           <div>
             <p class="eyebrow">Contact</p>
-            <h2>Let?s Build Something Crunchy</h2>
+            <h2>Lets Build Something Crunchy</h2>
           </div>
           <p class="section-note">
-            Reach out for publishing, co-dev, or contract work.
+            Use email for business and the Discord server for community updates,
+            feedback, and quick sharing.
           </p>
         </div>
+
         <div class="contact-card">
           <div>
             <h3>Say hello</h3>
-            <p>Email: contact@chadfruits.dev</p>
-            <p>Business Inquiries: publishing@chadfruits.dev</p>
+            <p>Email: fadialobaidy2012@gmail.com</p>
+            <p>Discord: ChadFruits community server</p>
           </div>
           <div class="contact-actions">
-            <a class="btn primary" href="mailto:contact@chadfruits.dev">Email Us</a>
-            <a class="btn ghost" href="https://github.com/ChadFruits" target="_blank" rel="noreferrer">
-              GitHub
+            <a class="btn primary" href="mailto:fadialobaidy2012@gmail.com">
+              Email Me
+            </a>
+            <a
+              class="btn ghost"
+              href="https://discord.gg/Y3AuMZWfAG"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Join Discord
             </a>
           </div>
         </div>
@@ -198,7 +239,7 @@
 
     <footer class="footer">
       <div class="container footer-inner">
-        <span>? 2026 ChadFruits Game Studio</span>
+        <span>2026 ChadFruits</span>
         <span>Built for GitHub Pages</span>
       </div>
     </footer>
